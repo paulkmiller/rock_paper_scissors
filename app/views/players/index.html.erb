@@ -1,0 +1,7 @@
+<h1>Rock, Paper, Scissors</h1>
+
+<%= form_tag(throw_path, method: 'post') do %>
+  <%= label_tag 'Make your move:' %>
+  <%= select_tag(:sign, options_for_select(@signs)) %>
+  <%= submit_tag 'Shoot!' %>
+<% end %>
